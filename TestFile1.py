@@ -16,19 +16,17 @@ print(ws['A2'].value)
 #changes the value at A2
 ws['A2'].value = "Test"
 
-### Assigns and prints out whatever worksheet I enter
+### Assigns whatever worksheet I enter
 ws = wb['Sheet1']
 print(ws)
 
-### creates a new sheet with the given name / Prints are only to check that it works
-print(wb.sheetnames)
+### creates a new sheet with the given name
 wb.create_sheet("Test")
-print(wb.sheetnames)
 
 ### naming a worksheet
 #ws.title = "Data"
 
-### Adding one column at a time (or is it a row? I can never remember) it goes left to right
+### Adding one column at a time 
 #ws.append(['Tim', 'Is', 'Great', '!'])
 
 ### saves your work to a file name you give / This can overwrite a file so be careful 
