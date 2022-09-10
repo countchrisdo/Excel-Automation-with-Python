@@ -3,6 +3,9 @@ from openpyxl import Workbook, load_workbook
 ### Importing desired workbook / Must be xlsv / Can use absolute path if file is outside folder
 wb = load_workbook('Grades.xlsx')
 
+### Creating a workbook
+#wb = Workbook()
+
 ### Assigns and prints out the active worksheet from this workbook
 ws = wb.active
 print(ws)
@@ -21,6 +24,12 @@ print(ws)
 print(wb.sheetnames)
 wb.create_sheet("Test")
 print(wb.sheetnames)
+
+### naming a worksheet
+#ws.title = "Data"
+
+### Adding one column at a time (or is it a row? I can never remember) it goes left to right
+#ws.append(['Tim', 'Is', 'Great', '!'])
 
 ### saves your work to a file name you give / This can overwrite a file so be careful 
 wb.save('Grades2.xlsx')
